@@ -1,0 +1,18 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Rossi Fan Quiz</string>
+    <string name="action_settings">Settings</string>
+    <string name="buttontext">Send</string>
+    <string name="buttonreset">Reset</string>
+    <string name="q_1">In which year Valentino has born?</string>
+    <string name="q_2">What\'s his race number?</string>
+    <string name="q_4">When Rossi left Honda for Yamaha?</string>
+    <string name="q_5">How many World Championship titles Rossi has won?</string>
+    <string name="q_6">For which of these teams raced Valentino?</string>
+    <string name="q_3">Pick Rossi\'s famous nicknames:</string>
+    <string name="q_7">When and where the M1 had this livery?</string>
+    <string name="q_8">Who was the teamate and rival of Valentino in 2016?</string>
+    <string name="q_9">Player\'s name:</string>
+    <string name="toast_message">Congrats <xliff:g id="player" example="Andrea">%s</xliff:g> you got <xliff:g id="points" example="1">%s</xliff:g> points out a max score of 8.</string>
+    <string name="welcome_subtitle">Find it out with this Quiz!</string>
+    <string name="welcome_title">Are you a real Rossi fan?!</string>
+</resources>

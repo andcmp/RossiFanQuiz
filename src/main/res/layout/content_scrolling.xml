@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.rossifanquiz.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/welcome_title"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/welcome_subtitle"
+            android:textSize="16sp" />
+
+        <!--Domanda 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/q_1"
+                android:textColor="@color/qText"
+                android:textSize="14sp"/>
+
+            <RadioGroup
+                android:id="@+id/birthGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/anno_75"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="1975"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/anno_81"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="1981"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/anno_79"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="1979"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/anno_77"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="1977"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Domanda 2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/q_2"
+                android:textColor="@color/qText"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/raceNumberText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/qText"
+                android:inputType="number"
+                android:textColor="@color/qText"/>
+
+        </LinearLayout>
+
+        <!--Domanda 3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/q_3"
+                android:textColor="@color/qText"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/nickCheckBox_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/qText"
+                        android:text="The Doctor"
+                        android:textColor="@color/qText"/>
+
+                    <CheckBox
+                        android:id="@+id/nickCheckBox_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/qText"
+                        android:text="The Maniac"
+                        android:textColor="@color/qText"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/nickCheckBox_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:buttonTint="@color/qText"
+                        android:text="The Goat"
+                        android:textColor="@color/qText"/>
+
+                    <CheckBox
+                        android:id="@+id/nickCheckBox_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:buttonTint="@color/qText"
+                        android:text="Capirex"
+                        android:textColor="@color/qText"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Domanda 4-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/q_4"
+                android:textColor="@color/qText"
+                android:textSize="14sp"/>
+
+            <RadioGroup
+                android:id="@+id/yamahaYearGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yamaha_2003"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="2003"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/yamaha_2005"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="2005"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/yamaha_2004"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="2004"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/yamaha_2002"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="2002"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Domanda 5-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/q_5"
+                android:textColor="@color/qText"
+                android:textSize="14sp"/>
+
+            <RadioGroup
+                android:id="@+id/titlesGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/champ_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="7"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/champ_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="9"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/champ_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="10"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/champ_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="8"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Domanda 6-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/q_6"
+                android:textColor="@color/qText"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/teamHonda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/qText"
+                        android:text="Honda"
+                        android:textColor="@color/qText"/>
+
+                    <CheckBox
+                        android:id="@+id/teamSuzuki"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/qText"
+                        android:text="Suzuki"
+                        android:textColor="@color/qText"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/teamDucati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:buttonTint="@color/qText"
+                        android:text="Ducati"
+                        android:textColor="@color/qText"/>
+
+                    <CheckBox
+                        android:id="@+id/teamYamaha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:buttonTint="@color/qText"
+                        android:text="Yamaha"
+                        android:textColor="@color/qText"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Domanda 7-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/q_7"
+                android:textColor="@color/qText"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/assen_07"/>
+
+            <RadioGroup
+                android:id="@+id/liveryGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/livery_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="2003 Mugello"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/livery_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="2007 Assen"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/livery_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="2014 Valencia"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/livery_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/qText"
+                    android:text="2016 Texas"
+                    android:textColor="@color/qText"
+                    android:textSize="14sp"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Domanda 8-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/q_8"
+                android:textColor="@color/qText"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/rivals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/qText"
+                android:inputType="text"
+                android:textColor="@color/qText"/>
+
+        </LinearLayout>
+
+        <!-- Domanda 9-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/layout_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/q_9"
+                android:textColor="@color/qText"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/qText"
+                android:inputType="text"
+                android:textColor="@color/qText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+                <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="@color/colorAccent"
+                android:onClick="submitQuiz"
+                android:text="@string/buttontext"/>
+
+                <Button
+                android:id="@+id/reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorAccent"
+                android:onClick="reset"
+                android:text="@string/buttonreset"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

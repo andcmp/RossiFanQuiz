@@ -66,7 +66,7 @@ public class ScrollingActivity extends AppCompatActivity {
         CheckBox nicknameCheckbox4 = (CheckBox) findViewById(R.id.nickCheckBox_4);
         boolean Capirex = nicknameCheckbox4.isChecked();
 
-        if (theDoctor == true && theGoat == true && theManiac == false && Capirex == false) {
+        if (theDoctor && theGoat && !theManiac && !Capirex) {
             points = points + 1;
         }
 
@@ -103,7 +103,7 @@ public class ScrollingActivity extends AppCompatActivity {
         CheckBox teamYamaha = (CheckBox) findViewById(R.id.teamYamaha);
         boolean yamaha = teamYamaha.isChecked();
 
-        if (honda == true && ducati == true && yamaha == true && suzuki == false) {
+        if (honda && ducati && yamaha && !suzuki) {
             points = points + 1;
         }
 
@@ -128,7 +128,15 @@ public class ScrollingActivity extends AppCompatActivity {
         EditText playerField = (EditText) findViewById(R.id.player);
         String player = playerField.getText().toString();
 
-        Toast.makeText(ScrollingActivity.this, getString(R.string.toast_message, player, points), Toast.LENGTH_SHORT).show();
+        // Check for points and adjust tost message accordingly
+        if (points >= 6) {
+            Toast.makeText(ScrollingActivity.this, getString(R.string.toast_message_congrats, player, points), Toast.LENGTH_SHORT).show();
+        } else if (points >= 3 && points < 6) {
+            Toast.makeText(ScrollingActivity.this, getString(R.string.toast_message_almost, player, points), Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(ScrollingActivity.this, getString(R.string.toast_message_bad, player, points), Toast.LENGTH_SHORT).show();
+        }
         points = 0;
     }
 

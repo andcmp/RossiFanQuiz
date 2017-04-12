@@ -2,7 +2,10 @@
     <string name="app_name">Rossi Fan Quiz</string>
     <string name="welcome_title">Sei un vero fan di Valentino Rossi?!</string>
     <string name="welcome_subtitle">Scoprilo con questo Quiz!</string>
+    <string name="action_settings">Impostazioni</string>
 
+
+    <!-- Questions -->
     <string name="q_1">In che anno è nato Valentino?</string>
     <string name="q_2">Qual\'è il suo numero di gara?</string>
     <string name="q_3">Quali tra questi sono soprannomi di Valentino?</string>
@@ -12,10 +15,14 @@
     <string name="q_7">In che anno e dove la M1 di Vale aveva questa livrea?</string>
     <string name="q_8">Chi era il compagno di team e rivale di Valentino nel 2016?</string>
     <string name="q_9">Nome del giocatore:</string>
+
+    <!-- Buttons -->
     <string name="buttontext">Invia</string>
     <string name="buttonreset">Reset</string>
 
-    <string name="toast_message">Complimenti <xliff:g id="player" example="Andrea">%s</xliff:g> hai totalizzato <xliff:g id="points" example="1">%s</xliff:g> punti su un totale di 8.</string>
+    <!-- Output messages -->
+    <string name="toast_message_congrats">Complimenti <xliff:g id="player" example="Andrea">%s</xliff:g>! Hai totalizzato <xliff:g id="points" example="1">%d</xliff:g> punti su un totale di 8.</string>
+    <string name="toast_message_almost">Bene <xliff:g id="player" example="Andrea">%s</xliff:g>! Hai totalizzato <xliff:g id="points" example="1">%d</xliff:g> punti su un totale di 8.</string>
+    <string name="toast_message_bad">Peccato <xliff:g id="player" example="Andrea">%s</xliff:g>! Hai totalizzato solo <xliff:g id="points" example="1">%d</xliff:g> punti su un totale di 8.</string>
 
-    <string name="action_settings">Impostazioni</string>
 </resources>
